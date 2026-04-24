@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/inset_15"
+    android:elevation="3dp"
+    android:layout_gravity="center"
+    android:layout_margin="25dp"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/mSelectLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/select_language"
+        android:textColor="@color/black_333333"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/mArabic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/arabic"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:drawablePadding="13dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_333333"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/lng_arb"
+        android:drawableEnd="@drawable/radio_button"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mSelectLanguage"
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/mEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/english"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:drawablePadding="13dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_333333"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/lng_eng_selected"
+        android:drawableEnd="@drawable/radio_button_active"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mArabic"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:background="@drawable/bg_round_button"
+        android:layout_marginTop="38dp"
+        android:paddingVertical="20dp"
+        android:text="@string/_continue"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/mEnglish"
+        />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

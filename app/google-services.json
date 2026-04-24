@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "964425611447",
+    "firebase_url": "https://curve-user-default-rtdb.firebaseio.com",
+    "project_id": "curve-user",
+    "storage_bucket": "curve-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964425611447:android:267b95de21b1874f4af532",
+        "android_client_info": {
+          "package_name": "com.curve.delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE9wXpwyTHtAFSD9ARd5k3XYh7oGpBdbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964425611447:android:84f7b90422064cf24af532",
+        "android_client_info": {
+          "package_name": "com.fluper.curve_user_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE9wXpwyTHtAFSD9ARd5k3XYh7oGpBdbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

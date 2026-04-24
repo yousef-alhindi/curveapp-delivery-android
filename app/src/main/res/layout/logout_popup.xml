@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timeout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/inset_popup"
+    android:elevation="3dp"
+    app:cardCornerRadius="25dp"
+    android:layout_gravity="center"
+    android:layout_margin="40dp"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/textView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timeoutHeading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:text="@string/are_you_sure_you_want_to_logout"
+            android:textColor="@color/black_333333"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_semibold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bg_lightgreen"
+            android:text="@string/yes"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textColor="@color/app_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cancel"
+            app:layout_constraintStart_toEndOf="@id/cancel"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/bg_rectangle"
+            android:backgroundTint="@color/app_color"
+            android:maxWidth="40dp"
+            android:text="@string/no"
+            android:padding="10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accept"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timeoutHeading" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
